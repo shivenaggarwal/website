@@ -88,7 +88,7 @@ export default function Home() {
             <h2 className="text-sm font-mono text-red-400 mb-2">open questions</h2>
             <div className="space-y-1 text-base text-gray-300 font-mono">
               <p>how do we align ai with human values?</p>
-              <p>what is the nature of understanding in neural networks?</p>
+              <p>is intelligence just compression over time?</p>
               <p>can we formalize creativity?</p>
             </div>
           </motion.div>
@@ -100,9 +100,9 @@ export default function Home() {
           >
             <h2 className="text-sm font-mono text-red-400 mb-2">current quests</h2>
             <div className="space-y-3 text-base text-gray-300 font-mono">
-              <div className="border-l-2 border-red-400 pl-3">mastering the mathematical foundations of ML</div>
-              <div className="border-l-2 border-red-400 pl-3">implementing research papers and exploring theoretical foundations</div>
-              <div className="border-l-2 border-red-400 pl-3">building projects with thoughtful documentation</div>
+              <div className="border-l-2 border-red-400 pl-3">exploring reinforcement learning</div>
+              <div className="border-l-2 border-red-400 pl-3">diving into LLM & LLMOps</div>
+              <div className="border-l-2 border-red-400 pl-3">building cool stuff</div>
             </div>
           </motion.div>
 
