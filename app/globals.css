@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/nk57-monospace');
+@import url('https://fonts.cdnfonts.com/css/fortunecity');
+
+@font-face {
+    font-family: 'NK57 Monospace';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NK57 Monospace'), url('https://fonts.cdnfonts.com/s/16188/nk57-monospace-no-rg.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'FortuneCity';
+    font-style: normal;
+    font-weight: 400;
+    src: local('FortuneCity'), url('https://fonts.cdnfonts.com/s/24025/FortuneCity.woff') format('woff');
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 18, 18, 18;
+  --background-end-rgb: 18, 18, 18;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+}
+
+.font-nk57 {
+  font-family: "NK57 Monospace", "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+.font-fortunecity {
+  font-family: "FortuneCity", "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+.font-mono {
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+}
+
+@layer base {
+  :root {
+    --background: 18 18 18;
+    --foreground: 255 255 255;
+    --card: 24 24 24;
+    --card-foreground: 255 255 255;
+    --popover: 24 24 24;
+    --popover-foreground: 255 255 255;
+    --primary: 239 68 68;
+    --primary-foreground: 255 255 255;
+    --secondary: 39 39 42;
+    --secondary-foreground: 255 255 255;
+    --muted: 39 39 42;
+    --muted-foreground: 161 161 170;
+    --accent: 39 39 42;
+    --accent-foreground: 255 255 255;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    --border: 39 39 42;
+    --input: 39 39 42;
+    --ring: 239 68 68;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
