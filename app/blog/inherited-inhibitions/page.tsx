@@ -104,9 +104,9 @@ export default function ReflectionsJournals() {
 
             <p className="text-base">
               we've gotten so used to comfort that we can't handle even
-              productive discomfort. The moment something feels hard, we retreat
+              productive discomfort. the moment something feels hard, we retreat
               to "learning more" instead of just pushing through the confusion.
-              But confusion is where the real learning happens.
+              but confusion is where the real learning happens.
             </p>
 
             <p className="text-base">
