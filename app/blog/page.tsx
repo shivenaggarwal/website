@@ -1,35 +1,32 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { ArrowLeft } from "lucide-react"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { ArrowLeft } from "lucide-react";
 
 export default function Blog() {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
-  // Commented out blog posts for future use
-  /*
   const posts = [
     {
-      title: "reinforcement learning from human feedback",
-      excerpt: "how rlhf is shaping the development of more aligned and helpful ai systems.",
-      date: "jun 12, 2025",
-      slug: "rlhf-explained",
+      title: "inherited inhibitions",
+      excerpt: "mental backchannel i forgot to keep private",
+      date: "july 20, 2025",
+      slug: "inherited-inhibitions",
     },
-  ]
-  */
+  ];
 
   return (
     <main className="min-h-screen bg-[#121212] text-white flex flex-col items-center justify-center py-8 px-4 relative">
       <div className="w-full max-w-3xl px-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-4">
           <Link
             href="/"
             className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors font-mono text-sm"
@@ -48,7 +45,7 @@ export default function Blog() {
           <div className="w-16 hidden sm:block"></div>
         </div>
 
-        {/* Coming Soon message with original styling */}
+        {/* Commented out coming soon message
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,8 +57,8 @@ export default function Blog() {
             thoughts on reinforcement learning, language models, and more will appear here soon.
           </p>
         </motion.div>
+        */}
 
-        {/* Commented out blog posts section for future use
         <div className="space-y-8">
           {posts.map((post, index) => (
             <motion.article
@@ -78,14 +75,17 @@ export default function Blog() {
                 <div className="text-sm text-gray-400 mb-2 font-mono">
                   <span>{post.date}</span>
                 </div>
-                <p className="text-base text-gray-300 font-mono mb-2">{post.excerpt}</p>
-                <div className="text-sm text-red-400 group-hover:text-red-300 transition-colors font-mono">read →</div>
+                <p className="text-base text-gray-300 font-mono mb-2">
+                  {post.excerpt}
+                </p>
+                <div className="text-sm text-red-400 group-hover:text-red-300 transition-colors font-mono">
+                  read →
+                </div>
               </Link>
             </motion.article>
           ))}
         </div>
-        */}
       </div>
     </main>
-  )
+  );
 }
