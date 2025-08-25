@@ -100,9 +100,9 @@ export default function Home() {
           >
             <h2 className="text-sm font-mono text-red-400 mb-2">current quests</h2>
             <div className="space-y-3 text-base text-gray-300 font-mono">
-              <div className="border-l-2 border-red-400 pl-3">exploring reinforcement learning</div>
-              <div className="border-l-2 border-red-400 pl-3">diving into LLM & LLMOps</div>
-              <div className="border-l-2 border-red-400 pl-3">building cool stuff</div>
+              <div className="border-l-2 border-red-400 pl-3">language models</div>
+              <div className="border-l-2 border-red-400 pl-3">rl and control theory</div>
+              <div className="border-l-2 border-red-400 pl-3">world models</div>
             </div>
           </motion.div>
 
