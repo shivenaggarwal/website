@@ -15,36 +15,39 @@ export default function ReflectionsJournals() {
   if (!mounted) return null;
 
   return (
-    <main className="min-h-screen bg-[#121212] text-white py-8 px-4">
-      <div className="w-full max-w-2xl mx-auto">
-        <div className="flex items-center justify-between mb-12">
+    <main className="min-h-screen bg-[#121212] text-white relative">
+      <div className="w-[750px] mx-auto pt-24 pb-8 px-8 max-[1510px]:w-auto max-[1510px]:mx-0 max-[1510px]:ml-0 max-[1510px]:mr-0 max-[1510px]:px-4 max-[1510px]:pt-8">
+        <header className="mb-8">
           <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors font-mono text-sm"
+            href="/"
+            className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors font-mono text-base"
           >
             <ArrowLeft size={14} />
-            <span>back to blog</span>
+            <span>back</span>
           </Link>
-        </div>
+        </header>
 
         <motion.article
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="prose prose-invert max-w-none"
+          transition={{ duration: 0.6 }}
+          className="max-w-none"
         >
-          <header className="mb-8">
-            <h1 className="text-2xl font-mono text-red-400 mb-2">
+          <motion.header
+            className="mb-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
+          >
+            <h1 className="text-xl font-mono font-bold text-red-400 mb-2">
               inherited inhibitions
             </h1>
-            <div className="text-sm text-gray-400 font-mono flex items-center gap-3">
-              <time>july 20, 2025</time>
-              <span className="text-gray-600">•</span>
-              <span>by shiven</span>
+            <div className="text-base text-gray-400 font-mono">
+              2025-07-20
             </div>
-          </header>
+          </motion.header>
 
-          <div className="space-y-6 text-gray-300 font-mono leading-relaxed">
+          <div className="space-y-4 text-gray-300 font-mono leading-relaxed">
             <p className="text-base">
               written at 3:47am with too much caffeine and not enough sleep.
               maybe it's the late hour talking, but i think we're all living
@@ -130,9 +133,9 @@ export default function ReflectionsJournals() {
               follow someone else's script than to write your own.
             </p>
 
-            <h3 className="text-lg font-mono text-red-400 mt-8 mb-4">
+            <h4 className="text-base font-mono text-red-400 mt-6 mb-2">
               where do you get your dopamine?
-            </h3>
+            </h4>
 
             <p className="text-base">
               think about what actually gets you excited. what makes you lose
@@ -160,9 +163,9 @@ export default function ReflectionsJournals() {
               </p>
             </div>
 
-            <h3 className="text-lg font-mono text-red-400 mt-8 mb-4">
+            <h4 className="text-base font-mono text-red-400 mt-6 mb-2">
               small teams always win
-            </h3>
+            </h4>
 
             <p className="text-base">
               give me three people who actually care over thirty people going
@@ -172,9 +175,9 @@ export default function ReflectionsJournals() {
               dead weight.
             </p>
 
-            <h3 className="text-lg font-mono text-red-400 mt-8 mb-4">
+            <h4 className="text-base font-mono text-red-400 mt-6 mb-2">
               what's actually possible
-            </h3>
+            </h4>
 
             <p className="text-base">
               we underestimate what's possible. not just technologically, but
@@ -196,9 +199,9 @@ export default function ReflectionsJournals() {
               for your wildest ideas.
             </p>
 
-            <h3 className="text-lg font-mono text-red-400 mt-8 mb-4">
+            <h4 className="text-base font-mono text-red-400 mt-6 mb-2">
               breaking free
-            </h3>
+            </h4>
 
             <p className="text-base">
               we all know these things somewhere deep down, but we've been

@@ -1,20 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Blog() {
-  const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    router.push("/");
+  }, [router]);
 
-  if (!mounted) return null;
+  return null;
 
-  const posts = [
+  /* const posts = [
     {
       title: "inherited inhibitions",
       excerpt: "mental backchannel i forgot to keep private",
@@ -59,7 +57,7 @@ export default function Blog() {
         </motion.div>
         */}
 
-        <div className="space-y-8">
+        /*<div className="space-y-8">
           {posts.map((post, index) => (
             <motion.article
               key={index}
@@ -87,5 +85,5 @@ export default function Blog() {
         </div>
       </div>
     </main>
-  );
-}
+  ); 
+}*/
