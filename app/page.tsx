@@ -89,7 +89,7 @@ export default function Home() {
           >
             <h4 className="text-base font-mono text-red-400 mb-2">contact</h4>
             <p className="text-base text-gray-300 font-mono mb-3 leading-relaxed">
-              if you&apos;re building something wild or just want to say what&apos;s up, hit me up at{" "}
+              appreciate you coming this far, wanna say what&apos;s up, hit me up at{" "}
               <a href="mailto:aggarwalshiven0@gmail.com" className="text-red-400 hover:text-red-300 transition-colors">
                 aggarwalshiven0@gmail.com
               </a>
