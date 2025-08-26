@@ -1,0 +1,54 @@
+/* Default dark theme */
+:root {
+  --bg-primary: #11111b;
+  --bg-secondary: #1e1e2e;
+  --text-primary: #cdd6f4;
+  --text-secondary: #b1b1b1;
+  --text-muted: #6c7086;
+  --accent-primary: #f87171;
+  --accent-secondary: #fca5a5;
+  --border-color: #45475a;
+  --highlight: #313244;
+}
+
+/* Dark theme */
+:root[saved-theme="dark"] {
+  --bg-primary: #11111b;
+  --bg-secondary: #1e1e2e;
+  --text-primary: #cdd6f4;
+  --text-secondary: #b1b1b1;
+  --text-muted: #6c7086;
+  --accent-primary: #f87171;
+  --accent-secondary: #fca5a5;
+  --border-color: #45475a;
+  --highlight: #313244;
+}
+
+/* Light theme colors */
+:root[saved-theme="light"] {
+  --bg-primary: #faf4ed;
+  --bg-secondary: #fffaf3;
+  --text-primary: #3c3c43;
+  --text-secondary: #48484f;
+  --text-muted: #6e6e73;
+  --accent-primary: #ef4444;
+  --accent-secondary: #f87171;
+  --border-color: #cecacd;
+  --highlight: #dfdad9;
+}
+
+/* Ensure color scheme matches theme */
+:root[saved-theme="dark"] {
+  color-scheme: dark;
+}
+
+:root[saved-theme="light"] {
+  color-scheme: light;
+}
+
+/* Base styles using CSS variables */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

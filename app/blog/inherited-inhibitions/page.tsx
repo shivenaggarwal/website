@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
+import ThemeToggle from "../../../components/ThemeToggle";
 
 export default function ReflectionsJournals() {
   const [mounted, setMounted] = useState(false);
@@ -15,16 +16,18 @@ export default function ReflectionsJournals() {
   if (!mounted) return null;
 
   return (
-    <main className="min-h-screen bg-[#121212] text-white relative">
+    <main className="min-h-screen relative" style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
       <div className="w-[750px] mx-auto pt-24 pb-8 px-8 max-[1510px]:w-auto max-[1510px]:mx-0 max-[1510px]:ml-0 max-[1510px]:mr-0 max-[1510px]:px-4 max-[1510px]:pt-8">
-        <header className="mb-8">
+        <header className="mb-8 flex justify-between items-center">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors font-mono text-base"
+            className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity font-mono text-base"
+            style={{ color: 'var(--text-muted)' }}
           >
             <ArrowLeft size={14} />
             <span>back</span>
           </Link>
+          <ThemeToggle />
         </header>
 
         <motion.article
@@ -39,20 +42,20 @@ export default function ReflectionsJournals() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
           >
-            <h1 className="text-xl font-mono font-bold text-red-400 mb-2">
+            <h1 className="text-xl font-mono font-bold mb-2" style={{ color: 'var(--accent-primary)' }}>
               inherited inhibitions
             </h1>
-            <div className="text-base text-gray-400 font-mono">
+            <div className="text-base font-mono" style={{ color: 'var(--text-muted)' }}>
               2025-07-20
             </div>
           </motion.header>
 
-          <div className="space-y-4 text-gray-300 font-mono leading-relaxed">
+          <div className="space-y-4 font-mono leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
             <p className="text-base">
               written at 3:47am with too much caffeine and not enough sleep.
               maybe it's the late hour talking, but i think we're all living
               inside{" "}
-              <span className="text-red-400">
+              <span style={{ color: 'var(--accent-primary)' }}>
                 invisible cages we built ourselves
               </span>
               .
@@ -73,10 +76,10 @@ export default function ReflectionsJournals() {
               out and starts coding at 14 is shipping products that matter.
             </p>
 
-            <div className="border-l-2 border-red-400 pl-4 my-6">
+            <div className="border-l-2 pl-4 my-6" style={{ borderColor: 'var(--accent-primary)' }}>
               <p className="text-base italic">
                 "
-                <span className="text-red-400">
+                <span style={{ color: 'var(--accent-primary)' }}>
                   prerequisites are a myth. try giving the problem a shot first,
                   dive headfirst."
                 </span>
@@ -91,7 +94,7 @@ export default function ReflectionsJournals() {
             </p>
 
             <p className="text-base">
-              <span className="text-red-400">
+              <span style={{ color: 'var(--accent-primary)' }}>
                 speed matters more than we admit
               </span>
               . think about it, there are only 52 weeks in a year. how many do
@@ -121,7 +124,7 @@ export default function ReflectionsJournals() {
             </p>
 
             <p className="text-base">
-              <span className="text-red-400">most people are other people</span>
+              <span style={{ color: 'var(--accent-primary)' }}>most people are other people</span>
               , as wilde said. they're performing a character they think they
               should be instead of figuring out who they actually are. they
               optimize for external validation instead of internal satisfaction.
@@ -133,7 +136,7 @@ export default function ReflectionsJournals() {
               follow someone else's script than to write your own.
             </p>
 
-            <h4 className="text-base font-mono text-red-400 mt-6 mb-2">
+            <h4 className="text-base font-mono mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
               where do you get your dopamine?
             </h4>
 
@@ -163,7 +166,7 @@ export default function ReflectionsJournals() {
               </p>
             </div>
 
-            <h4 className="text-base font-mono text-red-400 mt-6 mb-2">
+            <h4 className="text-base font-mono mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
               small teams always win
             </h4>
 
@@ -175,7 +178,7 @@ export default function ReflectionsJournals() {
               dead weight.
             </p>
 
-            <h4 className="text-base font-mono text-red-400 mt-6 mb-2">
+            <h4 className="text-base font-mono mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
               what's actually possible
             </h4>
 
@@ -191,7 +194,7 @@ export default function ReflectionsJournals() {
             </p>
 
             <p className="text-base">
-              <span className="text-red-400">
+              <span style={{ color: 'var(--accent-primary)' }}>
                 your ambition should scare people
               </span>
               . if your goals don't make others uncomfortable, they're probably
@@ -199,7 +202,7 @@ export default function ReflectionsJournals() {
               for your wildest ideas.
             </p>
 
-            <h4 className="text-base font-mono text-red-400 mt-6 mb-2">
+            <h4 className="text-base font-mono mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
               breaking free
             </h4>
 
