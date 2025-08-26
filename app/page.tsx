@@ -46,14 +46,14 @@ export default function Home() {
         </motion.div>
 
         <div className="space-y-6">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h4 className="text-base font-mono text-red-400 mb-2">inspired by</h4>
             <p className="text-base text-gray-300 font-mono leading-relaxed">melancholic music, elegant math, good coffee.</p>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -90,17 +90,21 @@ export default function Home() {
             <h4 className="text-base font-mono text-red-400 mb-2">contact</h4>
             <p className="text-base text-gray-300 font-mono mb-3 leading-relaxed">
               appreciate you coming this far, wanna say what&apos;s up, hit me up at{" "}
-              <a href="mailto:aggarwalshiven0@gmail.com" className="text-red-400 hover:text-red-300 transition-colors">
+              {/*<a href="mailto:aggarwalshiven0@gmail.com" className="text-red-400 hover:text-red-300 transition-colors">
                 aggarwalshiven0@gmail.com
-              </a>
+              </a> */}
             </p>
             <div className="text-base font-mono leading-relaxed">
               <a href="https://github.com/shivenaggarwal" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                 github
               </a>
-              <span className="text-gray-400">    </span>
+              <span className="text-gray-400"> :: </span>
               <a href="https://x.com/shivenaggarwal_" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                 twitter
+              </a>
+              <span className="text-gray-400"> :: </span>
+              <a href="mailto:shivenaggarwal@proton.me" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                email
               </a>
             </div>
           </motion.div>
