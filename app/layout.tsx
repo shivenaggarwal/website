@@ -1,10 +1,13 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "../styles/themes.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const jetbrainsMono = JetBrains_Mono({ 
+  subsets: ["latin"],
+  variable: '--font-jetbrains-mono'
+});
 
 export const metadata: Metadata = {
   title: "shivenaggarwal",
@@ -18,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" saved-theme="dark">
-      <body className={inter.className}>{children}</body>
+      <body className={`${jetbrainsMono.variable} ${jetbrainsMono.className}`}>{children}</body>
     </html>
   );
 }

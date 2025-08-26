@@ -21,7 +21,7 @@ export default function ReflectionsJournals() {
         <header className="mb-8 flex justify-between items-center">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity font-mono text-base"
+            className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity text-base"
             style={{ color: 'var(--text-muted)' }}
           >
             <ArrowLeft size={14} />
@@ -42,15 +42,15 @@ export default function ReflectionsJournals() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
           >
-            <h1 className="text-xl font-mono font-bold mb-2" style={{ color: 'var(--accent-primary)' }}>
+            <h1 className="text-xl font-bold mb-2" style={{ color: 'var(--accent-primary)' }}>
               inherited inhibitions
             </h1>
-            <div className="text-base font-mono" style={{ color: 'var(--text-muted)' }}>
+            <div className="text-base" style={{ color: 'var(--text-muted)' }}>
               2025-07-20
             </div>
           </motion.header>
 
-          <div className="space-y-4 font-mono leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+          <div className="space-y-4 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
             <p className="text-base">
               written at 3:47am with too much caffeine and not enough sleep.
               maybe it's the late hour talking, but i think we're all living
@@ -136,7 +136,7 @@ export default function ReflectionsJournals() {
               follow someone else's script than to write your own.
             </p>
 
-            <h4 className="text-base font-mono mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
+            <h4 className="text-base mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
               where do you get your dopamine?
             </h4>
 
@@ -166,7 +166,7 @@ export default function ReflectionsJournals() {
               </p>
             </div>
 
-            <h4 className="text-base font-mono mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
+            <h4 className="text-base mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
               small teams always win
             </h4>
 
@@ -178,7 +178,7 @@ export default function ReflectionsJournals() {
               dead weight.
             </p>
 
-            <h4 className="text-base font-mono mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
+            <h4 className="text-base mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
               what's actually possible
             </h4>
 
@@ -202,7 +202,7 @@ export default function ReflectionsJournals() {
               for your wildest ideas.
             </p>
 
-            <h4 className="text-base font-mono mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
+            <h4 className="text-base mt-6 mb-2" style={{ color: 'var(--accent-primary)' }}>
               breaking free
             </h4>
 
@@ -237,7 +237,7 @@ export default function ReflectionsJournals() {
           </div>
 
           <div className="mt-8 pt-6 border-t border-gray-800">
-            <p className="text-sm text-gray-500 font-mono">
+            <p className="text-sm text-gray-500">
               this has been obvious to me for quite some time now, but it's
               always good to have a reminder. perhaps should have kept this in
               my private notes, but here we are.

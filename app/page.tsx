@@ -32,17 +32,17 @@ export default function Home() {
           className="mb-8"
         >
           <motion.h1
-            className="text-lg mb-4 font-mono"
+            className="text-lg mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
           >
             <span style={{ color: 'var(--accent-primary)' }}>yoo wsg!!</span>
           </motion.h1>
-          <p className="text-base font-mono mb-3 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+          <p className="text-base mb-3 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
             i&apos;m shiven - a researcher and engineer who love to hack on algorithms and work on intelligent systems.
           </p>
-          <p className="text-base font-mono leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--text-muted)' }}>
             i love working on fun/challenging engineering problems. i like to code and experiment with new architectures.
           </p>
         </motion.div>
@@ -62,8 +62,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            <h4 className="text-base font-mono mb-2" style={{ color: 'var(--accent-primary)' }}>posts</h4>
-            <div className="text-base font-mono leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+            <h4 className="text-base mb-2" style={{ color: 'var(--accent-primary)' }}>posts</h4>
+            <div className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
               2025-07-20 ::{" "}
               <Link href="/blog/inherited-inhibitions" className="hover:opacity-80 transition-opacity" style={{ color: 'var(--text-muted)' }}>
                 inherited inhibitions
@@ -76,8 +76,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h4 className="text-base font-mono mb-2" style={{ color: 'var(--accent-primary)' }}>current quests</h4>
-            <div className="space-y-2 text-base font-mono" style={{ color: 'var(--text-secondary)' }}>
+            <h4 className="text-base mb-2" style={{ color: 'var(--accent-primary)' }}>current quests</h4>
+            <div className="space-y-2 text-base" style={{ color: 'var(--text-secondary)' }}>
               <div className="border-l-2 pl-3 leading-relaxed" style={{ borderColor: 'var(--accent-primary)' }}>language models</div>
               <div className="border-l-2 pl-3 leading-relaxed" style={{ borderColor: 'var(--accent-primary)' }}>rl and control theory</div>
               <div className="border-l-2 pl-3 leading-relaxed" style={{ borderColor: 'var(--accent-primary)' }}>world models</div>
@@ -89,14 +89,14 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h4 className="text-base font-mono mb-2" style={{ color: 'var(--accent-primary)' }}>contact</h4>
-            <p className="text-base font-mono mb-3 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+            <h4 className="text-base mb-2" style={{ color: 'var(--accent-primary)' }}>contact</h4>
+            <p className="text-base mb-3 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
               appreciate you coming this far, wanna say what&apos;s up, hit me up at{" "}
               {/*<a href="mailto:aggarwalshiven0@gmail.com" style={{ color: 'var(--accent-primary)' }} className="hover:opacity-80 transition-opacity">
                 aggarwalshiven0@gmail.com
               </a> */}
             </p>
-            <div className="text-base font-mono leading-relaxed">
+            <div className="text-base leading-relaxed">
               <a href="https://github.com/shivenaggarwal" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" style={{ color: 'var(--text-muted)' }}>
                 github
               </a>

@@ -47,8 +47,13 @@
 }
 
 /* Base styles using CSS variables */
+* {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
 }
