@@ -38,7 +38,7 @@ export default function Home() {
             <span className="text-red-400">yoo wsg!!</span>
           </motion.h1>
           <p className="text-gray-300 text-base font-mono mb-3 leading-relaxed">
-            i&apos;m shiven - a researcher and engineer who likes to tinker with algorithms like lego bricks.
+            i&apos;m shiven - a researcher and engineer who love to hack on algorithms and work on intelligent systems.
           </p>
           <p className="text-gray-400 text-base font-mono leading-relaxed">
             i love working on fun/challenging engineering problems. i like to code and experiment with new architectures.
