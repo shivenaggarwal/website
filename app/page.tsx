@@ -40,7 +40,7 @@ export default function Home() {
             <span style={{ color: 'var(--accent-primary)' }}>yoo wsg!!</span>
           </motion.h1>
           <p className="text-base mb-3 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-            i&apos;m shiven - a researcher and engineer who love to hack on algorithms and work on intelligent systems.
+            i&apos;m shiven - a researcher and engineer who loves to hack on algorithms and work on intelligent systems.
           </p>
           <p className="text-base leading-relaxed" style={{ color: 'var(--text-muted)' }}>
             i love working on fun/challenging engineering problems. i like to code and experiment with new architectures.
