@@ -78,9 +78,8 @@ export default function ReflectionsJournals() {
 
             <div className="border-l-2 pl-4 my-6" style={{ borderColor: 'var(--accent-primary)' }}>
               <p className="text-base italic">
-                "
                 <span style={{ color: 'var(--accent-primary)' }}>
-                  prerequisites are a myth. try giving the problem a shot first,
+                  "prerequisites are a myth. try giving the problem a shot first,
                   dive headfirst."
                 </span>
               </p>
@@ -160,9 +159,11 @@ export default function ReflectionsJournals() {
 
             <div className="border-l-2 border-red-400 pl-4 my-6">
               <p className="text-base italic">
-                "the source of your highs shapes everything you do. chase the
-                feeling of making things better, not the feeling of being told
-                you're good."
+                <span style={{ color: 'var(--accent-primary)' }}>
+                  "the source of your highs shapes everything you do. chase the
+                  feeling of making things better, not the feeling of being told
+                  you're good."
+                </span>
               </p>
             </div>
 
